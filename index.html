@@ -8,27 +8,21 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="quiz-box">
-        <div id="quiz">
-          <h1>World Quiz</h1>
-          <div class="quiz-header">
-            <p id="progress">Question x of y</p>
-            <p id="count-down"></p>
-          </div>
-          <p id="question"></p>
-
-          <div class="buttons">
-            <button class="btn" id="btn0">A. <span id="choice0"></span></button>
-            <button class="btn" id="btn1">B. <span id="choice1"></span></button>
-            <button class="btn" id="btn2">C. <span id="choice2"></span></button>
-            <button class="btn" id="btn3">D. <span id="choice3"></span></button>
-          </div>
-          <hr />
-          <footer>
-            <p>World Quiz 2022</p>
-          </footer>
+    <div class="quiz-wrapper">
+      <div id="questionBox" class="question">Question</div>
+      <div class="options">
+        <ul id="ul">
+          <li id="opt1" onclick="button(this)"></li>
+          <li id="opt2" onclick="button(this)"></li>
+          <li id="opt3" onclick="button(this)"></li>
+          <li id="opt4" onclick="button(this)"></li>
+        </ul>
+      </div>
+      <div class="score">
+        <div class="next">
+          <button id="btnNext" type="button" onclick="next()">Next</button>
         </div>
+        <div class="score-card">SCORE: <span id="scoreCard">0</span></div>
       </div>
     </div>
     <script src="./assets/js/quiz.js"></script>
