@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <div class="countdown"><span id="timer">60</span></div>
     <div class="quiz-wrapper">
       <div id="questionBox" class="question">Question</div>
       <div class="options">
@@ -24,6 +25,15 @@
         </div>
         <div class="score-card">SCORE: <span id="scoreCard">0</span></div>
       </div>
+    </div>
+    <div class="hide" id="end-game">
+      <h2>Congrats you completed the Quiz!</h2>
+      <p>Your final score is...<span id="final-score"></span></p>
+      <p>
+        Enter you intials
+        <input type="text" id="player-initials" />
+      </p>
+      <button id="submit">Submit</button>
     </div>
     <script src="./assets/js/quiz.js"></script>
   </body>
