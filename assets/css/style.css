@@ -11,16 +11,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.quiz-wrapper {
-  height: 400px;
-  width: 600px;
-  background-color: lightseagreen;
-  margin: 30px auto;
-  border-radius: 8px;
-  padding: 25px;
-}
 
-.quiz-wrapper .question {
+.wrapper .question {
   min-height: 50px;
   background-color: lightcoral;
   border-radius: 8px;
@@ -31,12 +23,12 @@ body {
   font-size: 25px;
 }
 
-.quiz-wrapper .options {
+.wrapper .options {
   float: left;
   width: 100%;
 }
 
-.quiz-wrapper .options ul {
+.wrapper .options ul {
   list-style: none;
   padding: 0%;
   display: flex;
@@ -44,7 +36,7 @@ body {
   flex-wrap: wrap;
 }
 
-.quiz-wrapper .options ul li {
+.wrapper .options ul li {
   display: inline-block;
   background-color: lightblue;
   width: 46%;
@@ -57,31 +49,31 @@ body {
   cursor: pointer;
 }
 
-.quiz-wrapper .options ul li.correct {
+.wrapper .options ul li.correct {
   background-color: lightgreen;
   box-shadow: 0px 3px 0px grey;
 }
 
-.quiz-wrapper .options ul li.wrong {
+.wrapper .options ul li.wrong {
   background-color: rgb(224, 93, 93);
   box-shadow: 0px 3px 0px grey;
 }
 
-.quiz-wrapper .options ul li:active {
+.wrapper .options ul li:active {
   box-shadow: 0px 0px 0px rgb(84, 110, 179);
 }
 
-.quiz-wrapper .score {
+.wrapper .score {
   float: left;
   width: 100%;
 }
 
-.quiz-wrapper .score .next {
+.wrapper .score .next {
   width: 40%;
   float: left;
 }
 
-.quiz-wrapper .score .next button {
+.wrapper .score .next button {
   padding: 10px 70px;
   color: white;
   background-color: lightsalmon;
@@ -89,14 +81,14 @@ body {
   border-radius: 8px;
 }
 
-.quiz-wrapper .score .score-card {
+.wrapper .score .score-card {
   width: 60%;
   float: left;
   line-height: 40px;
   font-size: 20px;
 }
 
-.quiz-wrapper .score .score-card span {
+.wrapper .score .score-card span {
   background-color: lightcoral;
   padding: 5px 20px;
   border: none;
